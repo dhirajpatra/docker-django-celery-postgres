@@ -1,10 +1,11 @@
 
-
 # Docker based Django Celery Redis PostgreSql Application
 
 ## Overview
 
-Briefly describe your application's purpose and key features.
+This is a demo application developed to explain how celery work with Django and PostgreSql as database. I have to used Redis as well as Nginx for reverse proxy. I kept the whole application inside Docker with microservices architecture so that you can run and further develop easily without any constraint of your local environment.
+
+It just create a simple task and to calculate the result takes it as background job by celery. So when it is available and upadted into the postgresql database. Next API call would display the result.
 
 ## Technologies Used
 
@@ -13,6 +14,7 @@ Briefly describe your application's purpose and key features.
 - Celery
 - Redis
 - PostgreSQL
+- Nginx
 - Docker
 
 ## Prerequisites
