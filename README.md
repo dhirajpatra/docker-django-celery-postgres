@@ -66,16 +66,16 @@ It just create a simple task and to calculate the result takes it as background 
 
 ## Contributing
 
-- Outline guidelines for contributing to the project.
+- You can forn this repo and update in your repo. After that you can make a pull request to merge with this repo.
 
 ## Troubleshooting
 
-- Address common issues and their solutions.
+- Continue working on it. If you found any kindly let me know.
 
 ## Additional Notes
 
-- Provide any further tips or considerations for beginners.
+- There are plenty of online articles some of them you can find in my free blog as well https://dhirajpatra.blogspot.com to learn Django, Redis, Postgresql, Nginx and Docker. Lets begin :)
 
 ## License
 
-- State the project's license.
+- MIT.
