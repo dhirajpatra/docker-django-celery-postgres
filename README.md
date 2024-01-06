@@ -62,7 +62,7 @@ It just create a simple task and to calculate the result takes it as background 
 
 ## Running Tests
 
-- Explain how to run your test suite.
+- Yet to complete the test suite.
 
 ## Contributing
 
