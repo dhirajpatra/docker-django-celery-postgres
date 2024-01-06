@@ -1,4 +1,4 @@
-version: '2'
+version: '3.8'
 
 services:
     nginx:
@@ -19,16 +19,8 @@ services:
             - static_volume:/app/backend/django_static
         expose:
             - 8000     
-        environment:
-            DEBUG: "True"
-            CELERY_BROKER_URL: "redis://redis:6379/0"
-            CELERY_RESULT_BACKEND: "redis://redis:6379/0"
-            DJANGO_DB: postgresql
-            POSTGRES_HOST: db
-            POSTGRES_NAME: postgres
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
-            POSTGRES_PORT: 5432
+        env_file:
+            - .env
     worker:
         restart: unless-stopped
         build:
@@ -37,16 +29,8 @@ services:
         entrypoint: /app/docker/backend/worker-entrypoint.sh
         volumes:
             - static_volume:/app/backend/django_static
-        environment:
-            DEBUG: "True"
-            CELERY_BROKER_URL: "redis://redis:6379/0"
-            CELERY_RESULT_BACKEND: "redis://redis:6379/0"
-            DJANGO_DB: postgresql
-            POSTGRES_HOST: db
-            POSTGRES_NAME: postgres
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
-            POSTGRES_PORT: 5432
+        env_file:
+            - .env
         depends_on:
             - server
             - redis
@@ -60,10 +44,8 @@ services:
         restart: unless-stopped
         volumes:
             - postgres_data:/var/lib/postgresql/data/
-        environment:
-            POSTGRES_DB: postgres
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
+        env_file:
+            - .env
         expose:
             - 5432
     

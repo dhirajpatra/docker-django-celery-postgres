@@ -7,6 +7,58 @@ This is a demo application developed to explain how celery work with Django and 
 
 It just create a simple task and to calculate the result takes it as background job by celery. So when it is available and upadted into the postgresql database. Next API call would display the result.
 
+Folder structure:
+
+├── README.md
+├── backend
+│   ├── assignments
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-311.pyc
+│   │   │   ├── admin.cpython-311.pyc
+│   │   │   ├── apps.cpython-311.pyc
+│   │   │   ├── models.cpython-311.pyc
+│   │   │   ├── serializers.cpython-311.pyc
+│   │   │   ├── tasks.cpython-311.pyc
+│   │   │   ├── urls.cpython-311.pyc
+│   │   │   └── views.cpython-311.pyc
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations
+│   │   │   ├── 0001_initial.py
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── tasks.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   ├── backend
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-311.pyc
+│   │   │   ├── celery.cpython-311.pyc
+│   │   │   ├── settings.cpython-311.pyc
+│   │   │   ├── urls.cpython-311.pyc
+│   │   │   └── wsgi.cpython-311.pyc
+│   │   ├── asgi.py
+│   │   ├── celery.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── db.sqlite3
+│   └── manage.py
+├── docker
+│   ├── backend
+│   │   ├── Dockerfile
+│   │   ├── server-entrypoint.sh
+│   │   └── worker-entrypoint.sh
+│   └── nginx
+│       └── default.conf
+├── docker-compose.yml
+└── requirements.txt
+
 ## Technologies Used
 
 - Python
