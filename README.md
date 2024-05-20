@@ -8,6 +8,7 @@ This is a demo application developed to explain how celery work with Django and 
 It just create a simple task and to calculate the result takes it as background job by celery. So when it is available and upadted into the postgresql database. Next API call would display the result.
 
 Folder structure:
+```
 
 One level
 .
@@ -19,7 +20,6 @@ One level
 
 two level
 
-```
 .
 ├── README.md
 ├── backend
