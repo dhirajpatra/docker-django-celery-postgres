@@ -19,6 +19,7 @@ One level
 
 two level
 
+```
 .
 ├── README.md
 ├── backend
@@ -31,6 +32,7 @@ two level
 │   └── nginx
 ├── docker-compose.yml
 └── requirements.txt
+
 
 three level
 
@@ -84,6 +86,8 @@ three level
 │       └── default.conf
 ├── docker-compose.yml
 └── requirements.txt
+
+```
 
 ## Technologies Used
 
@@ -144,7 +148,7 @@ three level
 
 ## Contributing
 
-- You can forn this repo and update in your repo. After that you can make a pull request to merge with this repo.
+- You can fork this repo and update in your repo. After that you can make a pull request to merge with this repo.
 
 ## Troubleshooting
 
