@@ -10,9 +10,9 @@ from assignments.serializers import AssignmentSerializer
 from assignments.tasks import task_execute
 
 
-# Create your views here.
+# Assignment viewset
 class AssignmentViewSet(viewsets.ModelViewSet):
-    
+    # Serializer for Assignment
     serializer_class = AssignmentSerializer
     queryset = Assignment.objects.all()
     
